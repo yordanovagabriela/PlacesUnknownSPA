@@ -1,0 +1,26 @@
+<div class="col-md-3">
+	<img class="poster img-responsive thumbnail" src={{photo}} alt="{{name}}" title="{{name}}">
+	<button type="button" class="btn btn-info show-info-button" data-toggle="modal" data-target="#{{name}}" accesskey="f">{{name}}</button>
+	<!-- Modal -->
+	<div id="{{name}}" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" accesskey="c">&times;</button>
+				<strong><h4 class="modal-title">{{name}}</h4></strong>
+				<h5 class="modal-subtitle">{{spots}}</h5> 
+			</div>
+		<div class="modal-body">
+			<img class="poster img-responsive" src={{photo}} alt="{{name}}" title="{{name}}">
+			<hr>
+			<p>{{story}}</p>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" accesskey="c">Close</button>
+      </div>
+		</div>
+		</div>
+	</div>
+</div>

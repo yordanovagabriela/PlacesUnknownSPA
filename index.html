@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Places Unknown</title>
+		
+		<!-- icon-bar -->
+		<link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ios7-active-2/512/Earth.png">
+	
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	
+		<!-- google fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Crete+Round' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		
+		<div class="jumbotron">
+			<header>
+				<nav class="navbar navbar-default navbar-fixed-top">
+
+					<div class="container-fluid">
+					<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+				
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+								<!-- from boostrap (when nav-button appears)-->
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">Places Unknown</a>
+						</div>
+
+						<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav">
+									<li><a href="#publish-a-trip" >Publish trip</a></li>
+									<li><a href="#trips-by-travellers">Trips by Travellers</a></li>
+									<li><a href="#how-it-works">How it works</a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+
+					</div><!-- /.container-fluid -->
+
+				</nav>
+			</header>
+			<div class="container text-center headings">
+				<h1>Places Unknown</h1>
+				<h3>Discover Trips Shared by Real Travelers</h3>
+				<button type="button" class="btn btn-default" accesskey="p"><a href="#publish-a-trip" id ="publish-button" >Publish Trip</a></button>
+			</div>
+
+		</div>
+	
+		<h2 class="labels" id="publish-a-trip">Publish a trip</h2>
+		<div class="container text-center publish-form">
+			<form id="main-form" role="form">
+				<div class="form-group" id="story-name">
+					<label for="story-name"><p id="main-label">Create a Beautiful Travel Story </p>
+					<p id="sub-label">Share trip itineraries, photos, reviews and maps with your friends and fellow travelers</p></label>
+					<input type="text" class="form-control input-lg" id="str-name" placeholder="Enter a title for your story e.g. Backpacking in Africa" maxlength="20" accesskey="i" required='required' />
+				</div>
+			</form>
+
+			<div id="buttons-area">
+				<button id="next" class="btn btn-default" accesskey="n">Next</button>
+			</div>
+		</div>
+
+		<h2 class="labels" id="trips-by-travellers">Trips by Travellers</h2>
+
+		<div class="container text-center" id="main"></div>
+
+		<h2 class="labels" id="how-it-works">How it works</h2>
+		<div class= "container">
+
+			<div class="row">
+				<div class="col-md-6 info">
+					<h2>Discover Travel Itineraries</h2>
+					<p>Discover complete travel itineraries of friends, global travelers and celebrities.
+				Browse travel photos, maps, reviews and recommendations.
+					</p>
+				</div>
+				<div class="col-md-6">
+					<img src="http://www.tripoto.com/img/discoverSection.png" class="img-responsive">
+				</div>
+			</div>
+	
+			<div class="row">
+				<div class="col-md-6">
+					<img src="http://www.tripoto.com/img/mapMarker.png" class="img-responsive">
+				</div>
+				<div class="col-md-6 info">
+					<h2>Publish Your Trips</h2>
+					<p>Upload travel photos and create visually stunning travel itineraries.
+				Share your travel experience with your friends and family.
+				Reach out to 1000's of travelers directly. Build your own brand as a traveler.
+					</p>
+				</div>
+			</div>
+		</div>
+		<footer class="page-footer">
+			<p><strong>&copy Copyright 2016</strong></p>
+			<p><strong>Deyan Denchev &amp Gabriela Yordanova</strong> </p>
+					
+		</footer>
+	
+		<!-- handlebars  -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>	
+		
+		<!-- jQuery  -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		
+		<script src ="js/renderer.js"></script>
+		
+		<!-- bootstrap  -->
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+        <!-- DropBox JS -->
+		<script type="text/javascript" src="https://www.dropbox.com/static/api/1/dropins.js" id="dropboxjs" data-app-key="lzd7ndh64t5tyhu"></script>
+		
+		<script src="js/dropbox-chooser.js"></script>
+	
+		<script src="js/getJSON.js"></script>
+		
+		<!-- Publish.js -->
+		<script src="js/publish.js"></script>
+	
+	
+
+	</body>
+</html>
